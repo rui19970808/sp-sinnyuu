@@ -1,0 +1,211 @@
+body {
+  background-color: #FFCC00;
+  color: #330000;
+  margin: 3px;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* タイトル画像とキャラクター画像の間の余白を狭める */
+.title-img,
+.character-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* 横方向中央 */
+  margin-top: 0;
+  margin-bottom: 2px; /* 少しだけ余白 */
+}
+
+/* ●キャラクター紹介● の文字サイズは周りと同じ */
+.main-title {
+  color: #FF0000;
+  margin: 2px 0;      /* 上下の余白を狭く */
+  font-weight: normal;
+  font-size: 1em;
+}
+
+/* 『ポケットモンスターSPECIAL』～大紹介！は太字 */
+.character-intro {
+  font-weight: bold;
+  margin: 2px 0;      /* 余白を少し */
+  font-size: 1em;
+  line-height: 1.3em; /* 行間調整 */
+}
+
+/* 気になるトレーナーたち～以降は通常文字 */
+.character-description {
+  font-weight: normal;
+  margin: 2px 0;      /* 余白を少し */
+  font-size: 1em;
+  line-height: 1.3em;
+}
+
+/* タイトル直下の紹介文ブロック */
+.character-intro-block {
+  margin-top: 2px;       /* 上余白を少なめ */
+  margin-bottom: 4px;    /* 下余白も少なめ */
+  line-height: 1.2em;    /* 行間を少し詰める */
+  text-align: center;    /* 中央揃え */
+}
+
+/* 太字にする部分 */
+.character-intro-block .bold {
+  font-weight: bold;
+}
+
+/* ●第一章／赤・緑・青編● と ルイ の余白調整 */
+.chapter-title,
+.links {
+  margin: 4px 0;      /* 上下をちょっと空けるだけ */
+  font-size: 1em;
+}
+
+.character-header td,
+.team-header td {
+  text-align: center;       /* 中央寄せ */
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 5px 0;
+  font-size: 1em;         /* ◆ルイ◆ はやや大きめ */
+  background-color: #009900; /* 緑枠 */
+}
+
+/* 章タイトル：文字サイズそのまま、太字にする */
+.chapter-title {
+  font-weight: bold !important;  /* ルイの影響を無視して太字 */
+  font-size: 1em;                /* 周りと同じサイズ */
+  text-align: center;
+  margin: 4px 0;                 /* 上下の余白 */
+}
+
+.character-main {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.left-column {
+  width: 202px;
+  text-align: center;
+  vertical-align: top;
+}
+
+.right-column {
+  vertical-align: top;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.spacer {
+  width: 8px;
+}
+
+.basic-info {
+  width: 100%;
+  text-align: left;
+  font-size: 0.9em;
+}
+
+.scene-img {
+  width: 100%;
+  height: auto;
+  margin-top: 5px;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* 左右均等 */
+  margin-top: 10px;
+}
+
+.team-member {
+  width: 48%;           /* 二列レイアウト */
+  margin-bottom: 10px;
+}
+
+.member-name {
+  background-color: #FF3300; /* 赤枠 */
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 5px 0;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.member-img {
+  display: block;
+  margin: 0 auto 5px auto;
+}
+
+.member-info {
+  font-size: 0.9em;
+  text-align: left;
+}
+
+.character-header,
+.team-header {
+  width: 100%;        /* テーブル幅を親に合わせる */
+  margin: 0 auto;     /* テーブル自体を中央に配置 */
+  border-collapse: collapse;
+}
+
+.character-header td,
+.team-header td {
+  text-align: center; /* td 内文字を中央寄せ */
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 5px 0;
+  font-size: 1em;     /* ◆ルイ◆ と チームの文字サイズを統一 */
+  background-color: #009900;
+}
+
+/* ●キャラクター紹介● の太字化 */
+.main-title {
+  font-weight: bold;   /* 太字 */
+  font-size: 1em;      /* サイズは周りと同じ */
+  color: #FF0000;
+  margin: 2px 0;       /* 上下余白はそのまま */
+  text-align: center;  /* 中央揃え */
+}
+
+/* 『ポケットモンスターSPECIAL』～大紹介！だけ太字 */
+header p:first-of-type {
+  font-weight: bold;
+  line-height: 1.3em;   /* 少し行間を詰める */
+  margin: 2px 0;        /* 上下余白小さめ */
+  text-align: center;
+}
+
+/* 「気になるトレーナー～」や「マンガと合わせて～」は通常文字 */
+header p:nth-of-type(2),
+header p:nth-of-type(3) {
+  font-weight: normal;
+  line-height: 1.2em;
+  margin: 2px 0;
+  text-align: center;
+}
+
+/* 「マンガと合わせて～」と章タイトルの間の余白 */
+header p:last-of-type {
+  margin-bottom: 10px;  /* 下余白 */
+}
+
+/* 章タイトル：文字サイズを少し小さく、太字はそのまま */
+.chapter-title {
+  font-weight: bold;     /* 太字 */
+  font-size: 0.9em;      /* 周りより少し小さめ */
+  text-align: center;    /* 中央寄せ */
+  margin: 10px 0 5px 0;  /* 上下の余白 */
+}
+
+/* ルイ部分 */
+.links {
+  text-align: center;
+  font-size: 1em;       /* サイズは周りと同じ */
+  margin: 5px 0;        /* 上下余白 */
+}
